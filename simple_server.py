@@ -1,13 +1,15 @@
+#!/usr/bin/env python3
 from flask import Flask, request, jsonify
 import io
 import contextlib
 import json
+import sys
 
 app = Flask(__name__)
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    return jsonify({"status": "healthy"}), 200
+    return jsonify({"status": "healthy", "message": "Python Code Execution Service is running"}), 200
 
 @app.route('/execute', methods=['POST'])
 def execute_script():
@@ -64,12 +66,9 @@ def execute_script():
     except Exception as e:
         return jsonify({"error": f"Server error: {str(e)}"}), 500
 
-import logging
-
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
-    logging.debug("Starting Flask app from main.py...")
-    try:
-        app.run(host='0.0.0.0', port=8080, debug=False)
-    except Exception as e:
-        logging.error(f"Failed to start Flask app: {e}")
+    print("Starting Python Code Execution Service...")
+    print("Server will be available at: http://localhost:8080")
+    print("Health check: http://localhost:8080/health")
+    print("Execute endpoint: POST http://localhost:8080/execute")
+    app.run(host='0.0.0.0', port=8080, debug=False)
