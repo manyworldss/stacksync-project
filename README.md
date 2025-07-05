@@ -24,21 +24,8 @@ To run the service locally:
 
 Use `test_simple.py` to run tests against the service.
 
-## Submission
 
-When submitting, please include:
 
-- GitHub Repository URL
-- Deployment URL (https://stacksync-project.fly.dev/)
-- Approximate time spent on the challenge
-
-Example:
-
-```
-GitHub Repository: https://github.com/yourusername/your-repo
-Deployment URL: https://your-app.fly.dev
-Time Spent: Approximately 4 hours
-```
 
 Thank you for reviewing the project!
 
