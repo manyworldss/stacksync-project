@@ -4,7 +4,7 @@ This project is a Python Code Execution Service that allows users to execute Pyt
 
 ## Deployment
 
-The service has been deployed on Fly.io. You can access it at your Fly.io app URL.
+The service has been deployed on Fly.io. You can access it at - https://stacksync-project.fly.dev/
 
 ## Running Locally
 
