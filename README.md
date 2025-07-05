@@ -1,5 +1,47 @@
 # Python Code Execution Service
 
+This project is a Python Code Execution Service that allows users to execute Python scripts securely in a sandboxed environment.
+
+## Deployment
+
+The service has been deployed on Fly.io. You can access it at your Fly.io app URL.
+
+## Running Locally
+
+To run the service locally:
+
+1. Ensure Python 3.11 is installed.
+2. Create and activate a virtual environment.
+3. Install dependencies with `pip install -r requirements.txt`.
+4. Run the service with `python app.py`.
+
+## API Endpoints
+
+- `GET /health`: Check service health.
+- `POST /execute`: Execute Python code.
+
+## Testing
+
+Use `test_simple.py` to run tests against the service.
+
+## Submission
+
+When submitting, please include:
+
+- GitHub Repository URL
+- Deployment URL (Fly.io app URL)
+- Approximate time spent on the challenge
+
+Example:
+
+```
+GitHub Repository: https://github.com/yourusername/your-repo
+Deployment URL: https://your-app.fly.dev
+Time Spent: Approximately 4 hours
+```
+
+Thank you for reviewing the project!
+
 This project is a simple Flask API that runs Python scripts safely using nsjail sandboxing.
 
 ## How to Run Locally
